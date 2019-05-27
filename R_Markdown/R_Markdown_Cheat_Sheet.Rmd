@@ -2,13 +2,12 @@
 title: "R Markdown Cheat Sheet"
 author: "Milca Tarshish"
 date: "5/24/2019"
-output: 
+output:
+  pdf_document: default
   html_document:
-    keep_md: true
+    df_print: paged
 ---
 
-## New line:   
-put 2 spaces at the end of the line  
 
 ## Text styles:
 *\*italic\**  
@@ -42,7 +41,7 @@ format_with_col = function(x, color){
 And then whenver need text in specific color just do as following examples (again - with echo=F):  
 ``` {r}
 red_text<-format_with_col("text to print in red", "red")
-green_text<-format_with_col("want to print this in green", "green4")
+green_text<-format_with_col("want to print this in green", "green")
 ``` 
 `r red_text` regular black text `r green_text`   
 
@@ -85,8 +84,8 @@ Example:
 array2<-c(1,2,3,4)
 var2<- sum(array2)  
 ``` 
-
-![](C:\coursera\myDocs\image1.PNG)  
+ 
+![](C:\coursera\myDocs\Data-Science-Cheat-Sheets\R_Markdown\image1.PNG)
 
 ## options in R code chunks:   
 1. cache: cache results for future knits (default = FALSE)  
@@ -109,4 +108,9 @@ x<-1
 \`\`\`  
 
 ## R Mardown Cheat Sheet from the web: 
-[R markdown cheat Sheet from the web](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
+[R markdown Cheat sheet](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)  
+[R markdown refference](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)  
+
+
+
+
